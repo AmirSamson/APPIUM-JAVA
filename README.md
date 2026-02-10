@@ -1,6 +1,6 @@
 ### APPIUM project -> Java 
 
-How to install and use Appium (using JAVA) on your VScode and windows machine. This is the right place to be. \n
+How to install and use Appium (using JAVA) on your VScode and windows machine. This is the right place to be. <br>
 please read the following material for understanding the project. 
 
 
