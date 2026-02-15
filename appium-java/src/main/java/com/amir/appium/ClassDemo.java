@@ -2,24 +2,48 @@ package com.amir.appium;
 
 public class ClassDemo {
     public static void main(String[] args){
-        Dog d1 = new Dog();
+        Dogs d1 = new Dogs();
         d1.age = 21;
         d1.name = "Toyger";
-        d1.sound = "Rawr";
         System.out.println(d1.age);
         System.out.println(d1.name);
+        d1.bark();
+        d1.bark(false);
+        d1.eat(); 
 
-        Dog d2 = new Dog();
-        d2.name = "Lucy";
-        d2.age = 10;
-        System.out.println(d2.age);
-        System.out.println(d2.name);
+        /*
+        RESULTS:
+        
+        21
+        Toyger
+        Dog is Barking
+        Dog is Barking false
+        Dog is eating
+
+        */
     }
     
 }
 
-class Dog {
+class Animal {
     String name;
     String sound;
     int age;
+    public void eat(){
+        System.out.println("Animal is  eating..");
+    }
+}
+
+class Dogs extends Animal  {
+    public void bark()
+        {
+            System.out.println("Dog is Barking");    
+        }
+    
+    public void bark(boolean isBarking){
+        System.out.println("Dog is Barking "+isBarking);
+    }
+    public void eat(){
+        System.out.println("Dog is eating");
+    }    
 }
